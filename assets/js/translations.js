@@ -1,0 +1,50 @@
+const translations = {
+  en: {
+    navAbout: "About Us",
+    navFeatures: "Features",
+    navContact: "contact",
+    heroTitle: "Welcome to <br>our company....",
+    heroDescription: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, sed temporanesciunt explicabo quae quasi nihil laudantium ipsam et alias cum atque reiciendis aut velit at dolore vero hic animi.",
+    aboutDescription: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae amet officia temporibus architecto repellat quo, vero quisquam consequatur impedit facilis eum eaque nihil, cumque qui voluptates voluptas in autem. Pariatur!",
+    newsTitle: "Lates News",
+    newsDesc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere tempora minus quia recusandae. Corrupti officiis aperiam velit ut provident omnis sint nam? Ea animi magnam alias temporibus provident, aliquam culpa!",
+    readTxt: "Read",
+    testimonialTitile: "Testimonials",
+    testimonialDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae porro, dignissimosiste, id eligendi aut excepturi enim cupiditate, ea consequuntur perferendis! Consequatur fugiat omnisquam odio nihil architecto, facilis nulla.",
+    testimonialName1: "Unknown 1",
+    testimonialComp1: "Company 1",
+    testimonialName2: "Unknown 2",
+    testimonialComp2: "Company 2",
+    contact: "Contact Us",
+    address1: "Keas 66 str, 1532, East Nile",
+    address2: "Athenes, Greece",
+    stayText: "Stay conncected with",
+    reservedText: "2020 Reserved By Company Name Limited.",
+    publishedDate: "Published: March 05,2024"
+  },
+  si: {
+    navAbout: "අප ගැන",
+    navFeatures: "විශේෂාංග",
+    navContact: "සම්බන්ධ වන්න",
+    heroTitle: "අපගේ සමාගමට<br>සාදරයෙන් පිළිගනිමු...",
+    heroDescription: "මෙය සිංහල භාෂාවේ උදාහරණයකි.",
+    aboutDescription: "මෙය අප ගැන කොටසයි.",
+    newsTitle: "නවතම පුවත්",
+    newsDesc: "අපගේ නවතම නිවේදන, යාවත්කාලීන කිරීම් සහ සේවා පිළිබඳ තොරතුරු මෙහිදී ඔබට දැනගත හැකිය.",
+    readTxt: "කියවන්න",
+    testimonialTitile: "පාරිභෝගික අදහස්",
+    testimonialDesc: "අපගේ සේවාවන් පිළිබඳ පාරිභෝගිකයන් ලබාදුන් අදහස් සහ අත්දැකීම් මෙහි දැක්වේ. ඔවුන්ගේ විශ්වාසය අපගේ සාර්ථකත්වයේ මූලික ශක්තියයි.",
+    testimonialName1: "නොදන්නා පුද්ගලයා 1",
+    testimonialComp1: "සමාගම 1",
+    testimonialName2: "නොදන්නා පුද්ගලයා 2",
+    testimonialComp2: "සමාගම 2",
+    contact: "අප හා සම්බන්ධ වන්න",
+    address1: "අංක 66, කීස් වීදිය, 1532",
+    address2: "ඇතෑන්ස්, ග්‍රීසිය",
+    stayText: "අප සමඟ සම්බන්ධ වී සිටින්න",
+    reservedText: "2020 සියලු හිමිකම් ඇවිරිණි. සමාගම නම ලිමිටඩ්.",
+    publishedDate: "ප්‍රකාශිත දිනය: 2024 මාර්තු 05"
+  }
+}
+
+export default translations;

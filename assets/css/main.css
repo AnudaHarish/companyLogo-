@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+header {
+  padding-top: 3.2rem;
+  background-color: #0864B1;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
+  color: #fff;
+  overflow: hidden;
+}
+.hero .row {
+  min-height: 700px;
+}
+
+.image-wrapper {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-left: 60px;
+  z-index: 1;
+}
+
+.hero__bg {
+  width: 140%;
+  height: 100%;
+  object-fit: contain;
+  object-position: right center;
+  transform: translateX(-40%);
+}
+
+.hero__shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  z-index: 1000;
+}
+
+.nav_left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.language_swithcher select {
+  background: transparent;
+  color: white;
+  padding: 4px 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.nav__logo {
+  font-size: 1.5rem;
+  margin: auto 1rem;
+}
+
+.nav__menu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.nav__menu ul li {
+  list-style: none;
+}
+.nav__menu ul li:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.nav__menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
+  display: block;
+}
+
+.nav__hamburger {
+  width: 1.875rem;
+  height: 1.313rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.nav__hamburger__line {
+  height: 0.188rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.625rem;
+  transition: all ease-in-out 0.2s;
+}
+
+@media screen and (max-width: 550px) {
+  .nav__hamburger {
+    display: flex;
+  }
+  .nav__menu {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: rgba(15, 14, 14, 0.487);
+    top: -14.5rem;
+    width: 100%;
+    transition: all ease-in-out 0.4s;
+    z-index: -1;
+  }
+  .nav__menu ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 3rem 0 0.6rem;
+  }
+  .nav__menu ul li {
+    text-align: center;
+  }
+  .nav__menu.active {
+    top: 0;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: self-start;
+  }
+  .nav__hamburger.active :nth-child(1) {
+    transform: rotate(45deg) translate(0.45rem, 0.1875rem);
+  }
+  .nav__hamburger.active :nth-child(2) {
+    opacity: 0;
+  }
+  .nav__hamburger.active :nth-child(3) {
+    transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
+  }
+}
+.footer {
+  background-color: #0864B1;
+  padding: 40px;
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+.rights {
+  font-weight: bold;
+}
+
+.social-icons img {
+  width: 30px;
+  margin: 0 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+.about {
+  padding: 100px 0;
+  background-color: #fff;
+}
+
+.section-title {
+  color: #0864B1;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  /* align-items: center; */
+}
+
+.section-divider {
+  width: 90px;
+  height: 4px;
+  background: #5c5c5c;
+  margin: 0 auto 40px;
+}
+
+.section-description {
+  max-width: 750px;
+  margin: 0 auto;
+  color: #6f6f6f;
+  font-size: 20px;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.card p {
+  max-height: 80px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 20px;
+}
+
+.card p.expand {
+  max-height: 500px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.mySwiper .swiper-button-next {
+  color: #d6cfcf;
+}
+.mySwiper .swiper-button-prev {
+  color: #d6cfcf;
+}
+.mySwiper .swiper-slide {
+  padding: 20px 70px;
+}
+.mySwiper .swiper-slide i {
+  font-size: 2rem;
+  color: #0864B1;
+}
+.mySwiper .swiper-slide p {
+  color: #676767;
+}
+.mySwiper .swiper-slide .name {
+  color: #0864B1;
+  font-weight: bold;
+}
+
+.wrapper-margin {
+  margin-bottom: 3rem;
+}
+
+.testimonial {
+  margin-top: 20px;
+}
+
+.news {
+  height: 800px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  justify-content: center;
+}
+
+.mycontainer {
+  width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=main.css.map */

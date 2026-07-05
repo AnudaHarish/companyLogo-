@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="anuda">
+    <meta name="description" content="associate web developer test">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+
+    <!-- js-script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+    <script src="https://kit.fontawesome.com/ceb3275c90.js" crossorigin="anonymous" defer></script>
+    <script src="assets/js/navbar.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+    <script type="module" src="assets/js/languagebehv.js"></script>
+    <title>Demo page</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav_left">
+          <div class="nav__logo">Company Logo</div>
+          <div class="language_swithcher">
+            <select id="language">
+              <option value="en">English</option>
+              <option value="si">සිංහල</option>
+            </select>
+          </div>
+        </div>
+        <a href="#" class="nav__hamburger">
+          <span class="nav__hamburger__line"></span>
+          <span class="nav__hamburger__line"></span>
+          <span class="nav__hamburger__line"></span>
+        </a>
+        <div class="nav__menu">
+          <ul>
+            <li class="nav__menu__link">
+              <a data-i18n="navAbout" href="#about" >About Us</a>
+            </li>
+            <li class="nav__menu__link">
+              <a data-i18n="navFeatures" href="#features">Features</a>
+            </li>
+            <li class="nav__menu__link">
+              <a data-i18n="navContact" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container-fluid hero">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-4 hero_content text-white">
+            <h1 data-i18n="heroTitle" class="hero_title">Welcome to <br>our company....</h1>
+            <p data-i18n="heroDescription" class="hero-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, sed tempora
+            nesciunt explicabo quae quasi nihil laudantium ipsam et alias cum atque reiciendis aut velit at dolore vero hic animi.</p>
+          </div>
+          <div class="col-md-8">
+            <div class="image-wrapper">
+              <img class="hero__bg" src="assets/images/Hero Banner.png" alt="hero banner">
+            </div>
+          </div>
+          <img class="hero__shape" src="assets/icons/Hero Background Shape.svg" alt="">
+        </div>
+      </div>
+    </header>
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-sm-8 text-center">
+            <h2 data-i18n="navAbout" class="section-title">About Us</h2>
+            <div class="section-divider"></div>
+            <p data-i18n="aboutDescription" class="section-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae amet officia temporibus architecto repellat quo, vero quisquam consequatur impedit facilis eum eaque nihil, cumque qui voluptates voluptas in autem. Pariatur!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="features">
+      <section class="news">
+        <div class="container">
+          <div class="row justify-content-center">
+          <div class="col-md-6 col-sm-8 text-center">
+            <h2 data-i18n="newsTitle" class="section-title">Latest News</h2>
+            <div class="section-divider"></div>
+          </div>
+        </div>
+          <div class="swiper newsSwiper">
+            <div class="swiper-wrapper wrapper-margin">
+              <div class="swiper-slide card text-center">
+                <img class="card-img-top" src="assets/images/img2.png" alt="">
+                <p data-i18n="newsDesc" class="card-text text-con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere tempora minus quia recusandae. Corrupti officiis aperiam velit ut provident omnis sint nam? Ea animi magnam alias temporibus provident, aliquam culpa!</p>
+                <a href="#" class="card-link d-block text-right pr-3">
+                  <span data-i18n="readTxt">Read</span>
+                  <img src="assets/icons/right-icon.svg" alt="right-icon" class="ml-2 mb-1" width="10">
+                </a>
+              </div>
+              <div class="swiper-slide card text-center">
+                <img class="card-img-top" src="assets/images/img3.png" alt="">
+                <p data-i18n="newsDesc" class="card-text text-con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere tempora minus quia recusandae. Corrupti officiis aperiam velit ut provident omnis sint nam? Ea animi magnam alias temporibus provident, aliquam culpa!</p>
+                <a href="#" class="card-link d-block text-right pr-3">
+                  <span data-i18n="readTxt">Read</span>
+                  <img src="assets/icons/right-icon.svg" alt="right-icon" class="ml-2 mb-1" width="10">
+                </a>
+              </div>
+              <div class="swiper-slide card text-center">
+                <img class="card-img-top" src="assets/images/img1.png" alt="">
+                <p data-i18n="newsDesc" class="card-text text-con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere tempora minus quia recusandae. Corrupti officiis aperiam velit ut provident omnis sint nam? Ea animi magnam alias temporibus provident, aliquam culpa!</p>
+                <a href="#" class="card-link d-block text-right pr-3">
+                  <span data-i18n="readTxt">Read</span>
+                  <img src="assets/icons/right-icon.svg" alt="right-icon" class="ml-2 mb-1" width="10">
+                </a>
+              </div>
+              <div class="swiper-slide card text-center">
+                <img class="card-img-top" src="assets/images/img2.png" alt="">
+                <p data-i18n="newsDesc" class="card-text text-con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere tempora minus quia recusandae. Corrupti officiis aperiam velit ut provident omnis sint nam? Ea animi magnam alias temporibus provident, aliquam culpa!</p>
+                <a href="#" class="card-link d-block text-right pr-3">
+                  <span data-i18n="readTxt">Read</span>
+                  <img src="assets/icons/right-icon.svg" alt="right-icon" class="ml-2 mb-1" width="10">
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonial mt-3 pt-4">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-6 col-sm-8 text-center">
+              <h2 data-i18n="testimonialTitile" class="section-title">Testimonials</h2>
+              <div class="section-divider"></div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-sm-8 text-center">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <i class="fa-solid fa-quote-right d-block text-right"></i>
+                    <p data-i18n="testimonialDesc" class="p-0 m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae porro, dignissimos
+                      iste, id eligendi aut excepturi enim cupiditate, ea consequuntur perferendis! Consequatur fugiat omnis
+                      quam odio nihil architecto, facilis nulla.</p>
+                    <i class="fa-solid fa-quote-left d-block text-left"></i>
+                    <p data-i18n="testimonialName1" class="name">- Unkown 1</p>
+                    <p data-i18n="testimonialComp1" class="company">company 1</p>
+                  </div>
+                  <div class="swiper-slide d-block text-center">
+                    <i class="fa-solid fa-quote-right d-block text-right"></i>
+                    <p data-i18n="testimonialDesc" class="p-0 m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae porro, dignissimos
+                      iste, id eligendi aut excepturi enim cupiditate, ea consequuntur perferendis! Consequatur fugiat omnis
+                      quam odio nihil architecto, facilis nulla.</p>
+                    <i class="fa-solid fa-quote-left d-block text-left"></i>
+                    <p data-i18n="testimonialName2" class="name">- Unkown 2</p>
+                    <p data-i18n="testimonialComp2" class="company">company 2</p>
+                  </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="contact" class="mt-5 pt-5">
+      <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-6 col-sm-8 text-center">
+              <h2 data-i18n="contact" class="section-title">Contact Us</h2>
+              <div class="section-divider"></div>
+            </div>
+          </div>
+    </section>
+    <div class="mycontainer pb-0" >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.483288493211!2d22.964064676210608!3d40.61922267140773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a838efeae44b73%3A0xcee12e4595142602!2sKeas%2066%2C%20Thessaloniki%20546%2038%2C%20Greece!5e0!3m2!1sen!2slk!4v1783193954173!5m2!1sen!2slk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+    <footer class="footer">
+      <div class="row justify-content-between align-items-center mt-0 pt-0">
+        <div class="col-md-4 d-flex">
+          <div class="logo">Company logo</div>
+          <div class="mt-1">
+            <div data-i18n="address1">Keas 66 str, 1532, East Nile</div>
+            <div data-i18n="address2">Athenes, Greece</div>
+            <div>+249 9123 456 78</div>
+            <div>+249 9123 456 78</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div data-i18n="stayText" class="mb-2 rights">Stay conncected with</div>
+          <div class="social-icons">
+            <img src="assets/icons/facebook.svg" alt="facebook-icon">
+            <img src="assets/icons/twitter.svg" alt="twitter-icon">
+            <img src="assets/icons/insta.svg" alt="insta-icon">
+            <img src="assets/icons/youtube.svg" alt="youtube-icon">
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-between mt-5 pt-3">
+        <div class="col-md-4 rights">
+          <p>&copy;<span data-i18n="reservedText">2020 Reserved By Company Name Limited.</span></p>
+        </div>
+        <div class="col-md-4">
+          <p data-i18n="publishedDate">Published: March 05,2024</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
