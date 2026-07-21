@@ -1,6 +1,9 @@
 header{
-  padding-top: 3.2rem;
-  background-color: $primary;
+  // padding-top: 3.2rem;
+  // background-color: $primary;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .hero{
@@ -13,6 +16,42 @@ header{
   .row{
     min-height: 700px;
   }
+}
+
+.hero-section img {
+  display: block;
+}
+
+.hero-section {
+  background-image: 
+  url('../images/Hero-Banner.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: whitesmoke; 
+  position: relative;
+  background-position: center;
+  height: 100vh;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('../icons/Hero-Background-Shape.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+  }
+}
+
+.main-text{
+  position: absolute;
+  width: 30%;
+  left: 15%;
+  top: 40%;
+}
+
+.nowrap{
+  white-space: nowrap;
 }
 
 .image-wrapper{
@@ -127,6 +166,20 @@ header{
 }
 
 @media screen and (max-width:$mobile){
+  .hero-section {
+    background-position: left;
+    background-size: cover;
+    &::before {
+      background-position: right;
+    }
+  }
+  
+  .main-text {
+    top: 40%;
+    left: 20%;
+    width: 70%;
+  }
+
   .nav__hamburger{
     display: flex;
   }
