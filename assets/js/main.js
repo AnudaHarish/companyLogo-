@@ -1,14 +1,14 @@
-var swiper = new Swiper(".mySwiper", {
+var testimonialSwiper = new Swiper('.mySwiper', {
   slidesPerView: 1,
   grabCursor: true,
   loop: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".mySwiper .swiper-pagination",
     clickable: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".mySwiper .swiper-button-next",
+    prevEl: ".mySwiper .swiper-button-prev",
   },
 });
 
@@ -16,7 +16,7 @@ var swiper = new Swiper('.newsSwiper', {
         slidesPerView: 3,
         spaceBetween: 30,
         pagination: {
-          el: '.swiper-pagination',
+          el: '.newsSwiper .swiper-pagination',
           clickable: true,
         },
 });
